@@ -1,0 +1,17 @@
+{
+	"id":"com.moimz.minitalk.plugin.antipapering",
+	"icon":"xi xi-slash-circle",
+	"title":{
+		"ko":"도배방지 플러그인"
+	},
+	"version":"1.0.0",
+	"description":{
+		"ko":"도배를 차단할 수 있는 플러그인 입니다."
+	},
+	"author":{
+		"name":"Arzz",
+		"email":"arzz@arzz.com"
+	},
+	"homepage":"https://www.minitalk.io",
+	"language":"ko"
+}
