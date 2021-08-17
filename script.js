@@ -6,8 +6,8 @@
  * @file /plugins/antipapering/script.js
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
- * @version 1.0.0
- * @modified 2021. 2. 3.
+ * @version 1.0.1
+ * @modified 2021. 8. 17.
  */
 if (Minitalk === undefined) return;
 
@@ -24,8 +24,8 @@ me.time = 10; // 10초 내
 me.count = 5; // 5개 메시지
 
 // 메시지를 보낼때마다 보낸 시각을 기록한다.
-Minitalk.on("sendMessage",function(minitalk,message,user) {
-	if (user.level < me.limit) {
+Minitalk.on("sendMessage",function(minitalk,message) {
+	if (minitalk.user.me.level < me.limit) {
 		// 메시지를 보낸 기록을 저장한다.
 		var antipapering = Minitalk.session("antipapering") ? Minitalk.session("antipapering") : [];
 		antipapering.push(moment().valueOf());
